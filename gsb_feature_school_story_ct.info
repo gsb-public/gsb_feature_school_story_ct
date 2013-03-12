@@ -1,7 +1,8 @@
-name = GSB Feature School Story
+name = GSB Feature School Story Content Type
 description = The feature for creating the GSB School Story content type
 core = 7.x
 package = GSB
+php = 5.2.4
 version = 7.x-1.0
 project = gsb_feature_school_story_ct
 dependencies[] = ctools
@@ -17,6 +18,7 @@ dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
+datestamp = 1363109952
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
