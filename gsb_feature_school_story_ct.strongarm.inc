@@ -22,10 +22,13 @@ function gsb_feature_school_story_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
         'workbench_access' => array(
-          'weight' => '10',
+          'weight' => '11',
+        ),
+        'flag' => array(
+          'weight' => '9',
         ),
       ),
       'display' => array(),

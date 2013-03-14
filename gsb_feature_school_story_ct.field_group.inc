@@ -13,6 +13,33 @@ function gsb_feature_school_story_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_byline|node|gsb_school_story|form';
+  $field_group->group_name = 'group_byline';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'gsb_school_story';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Byline',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_byline',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_byline|node|gsb_school_story|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_taxonomy|node|gsb_school_story|form';
   $field_group->group_name = 'group_taxonomy';
   $field_group->entity_type = 'node';
@@ -23,13 +50,13 @@ function gsb_feature_school_story_ct_field_group_info() {
     'label' => 'Taxonomy',
     'weight' => '8',
     'children' => array(
-      0 => 'field_target_audience',
-      1 => 'field_business_insight_topic',
+      0 => 'field_business_insight_topic',
+      1 => 'field_company_organization',
       2 => 'field_discipline',
       3 => 'field_industry',
       4 => 'field_region',
-      5 => 'field_company_organization',
-      6 => 'field_tag',
+      5 => 'field_tag',
+      6 => 'field_target_audience',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
