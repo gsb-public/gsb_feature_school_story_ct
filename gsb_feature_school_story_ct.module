@@ -5,3 +5,48 @@
  */
 
 include_once 'gsb_feature_school_story_ct.features.inc';
+
+/**
+ * Implements hook_form_alter()
+ */
+function gsb_feature_school_story_ct_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form_id == 'gsb_school_story_node_form') {
+
+      /*
+      $form['field_business_insight_topic']['und']['#states'] = array(
+        'required' => array(
+          ':input[name="flag[business_insight_flag]"]' => array(
+            array('checked' => 'TRUE'),
+          ),
+        ),
+      );
+      */
+
+      $form['field_byline']['und'][0]['field_byline_person_reference']['#states'] = array(
+        'visible' => array(
+          ':input[name="field_byline[und][' . '0' . '][field_byline_reference][und]"]' => array(
+            array('value' => 'UseEntityReference'),
+          ),
+        ),
+      );
+
+      $form['field_byline']['und'][0]['field_first_name']['#states'] = array(
+        'visible' => array(
+          ':input[name="field_byline[und][' . '0' . '][field_byline_reference][und]"]' => array(
+            array('value' => 'Other'),
+          ),
+        ),
+      );
+
+      $form['field_byline']['und'][0]['field_last_name']['#states'] = array(
+        'visible' => array(
+          ':input[name="field_byline[und][' . '0' . '][field_byline_reference][und]"]' => array(
+            array('value' => 'Other'),
+          ),
+        ),
+      );
+
+  }
+
+}
