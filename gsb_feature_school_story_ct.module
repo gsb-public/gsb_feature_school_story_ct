@@ -87,6 +87,14 @@ function gsb_feature_school_story_ct_form_alter(&$form, &$form_state, $form_id) 
           ),
         ),
       );
+      
+      // set the editorial summary field to have a maxlength to 150 chars.
+
+      if (!empty($form['field_editorial_summary']['und'][0])) {
+        $language = $form['field_editorial_summary']['#language'];
+        $form['field_editorial_summary'][$language][0]['value']['#maxlength'] = '150';
+        $form['field_editorial_summary'][$language][0]['value']['#description'] = t('Editorial summary is limited to 150 characters.');
+      }      
 
       // and we need to handle the form validation for the school story node edit form
     
