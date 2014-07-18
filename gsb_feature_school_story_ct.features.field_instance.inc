@@ -89,7 +89,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_alumni_story',
-    'label' => 'Alumni Mentioned',
+    'label' => 'Mentioned',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -100,7 +100,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_onoff',
@@ -1017,7 +1017,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_program_single',
-    'label' => 'Alumni Degree/Program',
+    'label' => 'Program',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
