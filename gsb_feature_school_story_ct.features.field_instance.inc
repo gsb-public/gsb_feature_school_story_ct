@@ -1134,8 +1134,8 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_related_other_content'
-  $field_instances['node-school_story-field_related_other_content'] = array(
+  // Exported field_instance: 'node-school_story-field_related_other_unlimited'
+  $field_instances['node-school_story-field_related_other_unlimited'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -1145,13 +1145,17 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
+        'module' => 'field_collection',
         'settings' => array(
+          'add' => 'Add',
           'conditions' => array(),
-          'link' => FALSE,
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 9,
+        'type' => 'field_collection_view',
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1162,7 +1166,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_related_other_content',
+    'field_name' => 'field_related_other_unlimited',
     'label' => 'Publication',
     'required' => 0,
     'settings' => array(
@@ -1171,15 +1175,12 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
+      'active' => 0,
+      'module' => 'field_collection',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'path' => '',
-        'size' => 60,
       ),
-      'type' => 'entityreference_autocomplete',
+      'type' => 'field_collection_embed',
       'weight' => 56,
     ),
     'workbench_access_field' => 0,
