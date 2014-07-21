@@ -9,9 +9,29 @@ include_once 'gsb_feature_school_story_ct.features.inc';
 /**
  * Implements hook_form_FORM_ID_alter() for school story node edit form.
  */
-function gsb_feature_school_story_ct_form_school_story_node_form_alter(&$form, &$form_state) {
+function gsb_feature_school_story_ct_form_school_story_node_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id != 'school_story_node_form') {
+    return;
+  }
 
   $language = $form['language']['#value'];
+
+  $form['field_link_key_audio']['#states'] = array(
+    'visible' => array(
+      ':input[name="field_icon[' . $language . ']"]' => array(
+        array('value' => 'audio'),
+      ),
+    ),
+  );
+
+  $form['field_link_key_video']['#states'] = array(
+    'visible' => array(
+      ':input[name="field_icon[' . $language . ']"]' => array(
+        array('value' => 'video'),
+      ),
+    ),
+  );
+
   // Hide alumni fields if the alumni checkbox is not checked.
   $form['field_program_single']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
     array('checked' => FALSE),
