@@ -1,7 +1,7 @@
 name = GSB Feature School Story Content Type
 core = 7.x
 package = GSB
-version = 7.x-1.1
+version = 7.x-1.0
 project = gsb_feature_school_story_ct
 dependencies[] = ds
 dependencies[] = entityreference
@@ -13,7 +13,7 @@ dependencies[] = pathauto_title_alias
 dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views
-datestamp = 1405663037
+datestamp = 1404707631
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
@@ -41,6 +41,7 @@ features[field_instance][] = node-school_story-field_link_unlimited
 features[field_instance][] = node-school_story-field_part_of_business_magazine
 features[field_instance][] = node-school_story-field_part_of_rethink
 features[field_instance][] = node-school_story-field_person_fac_ref
+features[field_instance][] = node-school_story-field_pr_contact_unlimited
 features[field_instance][] = node-school_story-field_program_single
 features[field_instance][] = node-school_story-field_region_of_interest
 features[field_instance][] = node-school_story-field_related_idea_story
@@ -64,11 +65,5 @@ features_exclude[dependencies][link] = link
 features_exclude[dependencies][list] = list
 features_exclude[dependencies][options] = options
 features_exclude[dependencies][taxonomy] = taxonomy
+features_exclude[dependencies][field_collection] = field_collection
 features_exclude[field_base][body] = body
-
-
-; Information added by drush on 2014-07-14
-version = "release-4.0-dev"
-project = "gsb_feature_school_story_ct"
-datestamp = "1404707631"
-
