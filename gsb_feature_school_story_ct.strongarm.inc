@@ -19,16 +19,16 @@ function gsb_feature_school_story_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '17',
+          'weight' => '18',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '16',
+          'weight' => '17',
         ),
         'redirect' => array(
-          'weight' => '15',
+          'weight' => '16',
         ),
       ),
       'display' => array(),
@@ -74,6 +74,13 @@ function gsb_feature_school_story_ct_strongarm() {
   $strongarm->name = 'node_submitted_school_story';
   $strongarm->value = 0;
   $export['node_submitted_school_story'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_school_story_pattern';
+  $strongarm->value = 'stanford-gsb-experience/news-history/[node:field_pathauto_title_alias]';
+  $export['pathauto_node_school_story_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
