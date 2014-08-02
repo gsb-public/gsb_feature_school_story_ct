@@ -232,5 +232,36 @@ function gsb_feature_school_story_ct_field_group_info() {
   );
   $export['group_taxonomy|node|school_story|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_related|node|school_story|default';
+  $field_group->group_name = 'group_wrapper_related';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'school_story';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Related wrapper',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_link_unlimited',
+      1 => 'field_person_fac_ref',
+      2 => 'field_related_idea_story',
+      3 => 'field_related_other_unlimited',
+      4 => 'related_title',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Related wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_wrapper_related|node|school_story|default'] = $field_group;
+
   return $export;
 }
