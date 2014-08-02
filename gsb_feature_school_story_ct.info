@@ -28,6 +28,7 @@ features[field_group][] = group_regions_of_interest|node|school_story|form
 features[field_group][] = group_related_content|node|school_story|form
 features[field_group][] = group_tags|node|school_story|form
 features[field_group][] = group_taxonomy|node|school_story|form
+features[field_group][] = group_wrapper_related|node|school_story|default
 features[field_instance][] = node-school_story-field_academic_area_unlimited
 features[field_instance][] = node-school_story-field_alumni_story
 features[field_instance][] = node-school_story-field_body
