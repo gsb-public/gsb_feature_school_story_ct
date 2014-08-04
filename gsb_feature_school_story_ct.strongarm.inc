@@ -15,7 +15,65 @@ function gsb_feature_school_story_ct_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__school_story';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'idea_story_related' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'views_content_pane' => array(
+        'custom_settings' => FALSE,
+      ),
+      'event_listing' => array(
+        'custom_settings' => FALSE,
+      ),
+      'event_upcoming' => array(
+        'custom_settings' => FALSE,
+      ),
+      'featured' => array(
+        'custom_settings' => FALSE,
+      ),
+      'idea_story_top_stories' => array(
+        'custom_settings' => FALSE,
+      ),
+      'insight_featured_card' => array(
+        'custom_settings' => FALSE,
+      ),
+      'megamenu' => array(
+        'custom_settings' => FALSE,
+      ),
+      'people_fpp' => array(
+        'custom_settings' => FALSE,
+      ),
+      'phd_job_market_candidate' => array(
+        'custom_settings' => FALSE,
+      ),
+      'media_contact' => array(
+        'custom_settings' => FALSE,
+      ),
+      'teaser_listing' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
@@ -31,7 +89,18 @@ function gsb_feature_school_story_ct_strongarm() {
           'weight' => '15',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'gsb_announcement_school_listing_entity_view_1' => array(
+          'default' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+          'idea_story_related' => array(
+            'weight' => '7',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__school_story'] = $strongarm;
