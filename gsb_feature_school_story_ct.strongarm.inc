@@ -77,28 +77,16 @@ function gsb_feature_school_story_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '18',
+          'weight' => '19',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '17',
+          'weight' => '18',
         ),
         'redirect' => array(
-          'weight' => '16',
-        ),
-      ),
-      'display' => array(
-        'gsb_announcement_school_listing_entity_view_1' => array(
-          'default' => array(
-            'weight' => '10',
-            'visible' => TRUE,
-          ),
-          'idea_story_related' => array(
-            'weight' => '7',
-            'visible' => FALSE,
-          ),
+          'weight' => '17',
         ),
       ),
       'display' => array(
