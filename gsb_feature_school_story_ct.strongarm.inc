@@ -49,6 +49,9 @@ function gsb_feature_school_story_ct_strongarm() {
       'featured' => array(
         'custom_settings' => FALSE,
       ),
+      'idea_story_related' => array(
+        'custom_settings' => TRUE,
+      ),
       'idea_story_top_stories' => array(
         'custom_settings' => FALSE,
       ),
@@ -121,12 +124,18 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
         ),
-      ),
-      'display' => array(
-        'gsb_announcement_school_listing_entity_view_1' => array(
+        'gsb_media_inquiries' => array(
           'default' => array(
-            'weight' => '10',
-            'visible' => TRUE,
+            'weight' => '30',
+            'visible' => FALSE,
+          ),
+          'idea_story_related' => array(
+            'weight' => '32',
+            'visible' => FALSE,
+          ),
+          'news_listing' => array(
+            'weight' => '30',
+            'visible' => FALSE,
           ),
           'idea_story_related' => array(
             'weight' => '7',
