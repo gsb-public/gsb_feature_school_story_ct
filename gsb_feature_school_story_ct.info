@@ -55,6 +55,7 @@ features[field_instance][] = node-school_story-field_region_of_interest
 features[field_instance][] = node-school_story-field_related_faculty
 features[field_instance][] = node-school_story-field_related_idea_story
 features[field_instance][] = node-school_story-field_related_other_unlimited
+features[field_instance][] = node-school_story-field_search_field
 features[field_instance][] = node-school_story-field_tag
 features[node][] = school_story
 features[variable][] = field_bundle_settings_node__school_story
