@@ -1370,11 +1370,11 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'type' => 'field_collection_view',
         'weight' => 33,
       ),
-      'news_listing' => array(
+      'idea_story_related' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 0,
       ),
       'news_listing' => array(
         'label' => 'above',

@@ -1,8 +1,9 @@
 name = GSB Feature School Story Content Type
 core = 7.x
 package = GSB
-version = 7.x-1.0
+version = 7.x-4.0
 project = gsb_feature_school_story_ct
+dependencies[] = concat_field
 dependencies[] = ds
 dependencies[] = entityreference
 dependencies[] = field_group
