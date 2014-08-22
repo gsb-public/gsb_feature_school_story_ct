@@ -110,7 +110,7 @@ function gsb_feature_school_story_ct_strongarm() {
         'gsb_media_inquiries' => array(
           'default' => array(
             'weight' => '30',
-            'visible' => FALSE,
+            'visible' => TRUE,
           ),
           'idea_story_related' => array(
             'weight' => '7',
