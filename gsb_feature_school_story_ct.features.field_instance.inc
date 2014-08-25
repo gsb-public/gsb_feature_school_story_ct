@@ -629,7 +629,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
-          'image_style' => '270x158',
+          'image_style' => '170x100',
         ),
         'type' => 'image',
         'weight' => 19,
