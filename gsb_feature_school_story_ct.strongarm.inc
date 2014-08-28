@@ -148,6 +148,7 @@ function gsb_feature_school_story_ct_strongarm() {
   $strongarm->name = 'node_options_school_story';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_school_story'] = $strongarm;
 
@@ -155,7 +156,7 @@ function gsb_feature_school_story_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_school_story';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_school_story'] = $strongarm;
 
   $strongarm = new stdClass();
