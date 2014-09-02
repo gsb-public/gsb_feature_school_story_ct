@@ -106,6 +106,10 @@ function gsb_feature_school_story_ct_strongarm() {
             'weight' => '11',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '33',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
@@ -118,6 +122,10 @@ function gsb_feature_school_story_ct_strongarm() {
           ),
           'news_listing' => array(
             'weight' => '30',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '35',
             'visible' => FALSE,
           ),
         ),
