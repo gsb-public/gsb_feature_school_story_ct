@@ -38,3 +38,45 @@ function gsb_feature_school_story_ct_form_school_story_node_form_alter(&$form, &
   );
 }
 
+/**
+ * Implements hook_ds_pre_render_alter()
+ *
+ * Determine if the related section has any items.
+ * If it doesn't, then we will remove it so that they do not render as empty section.
+ */
+function gsb_feature_school_story_ct_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
+
+  // if the context is an idea story, and the view mode is full
+  if (!empty($context['bundle']) && $context['bundle'] == 'school_story' && $context['view_mode'] == 'full') {
+
+    // get the id for the related section in the right-hand layout
+    $related_id = -1;
+    foreach($layout_render_array['right'] as $key => $right_stuff) {
+      if (!empty($right_stuff['#id'])) {
+        $related_id = $key;
+      }
+    }
+
+    if ($related_id != -1) {
+      $related_faculty = array();
+      if (!empty($context['entity']->field_related_faculty)) {
+        $item_id = $context['entity']->field_related_faculty['und'][0]['value'];
+        $related_faculty = $layout_render_array['right'][$related_id]['field_related_faculty'][0]['entity']['field_collection_item'][$item_id]['#entity']->field_person_fac_single_ref;
+      }
+      $publication = array();
+      if (!empty($context['entity']->field_related_other_unlimited)) {
+        $item_id = $context['entity']->field_related_other_unlimited['und'][0]['value'];
+        $publication = $layout_render_array['right'][$related_id]['field_related_other_unlimited'][0]['entity']['field_collection_item'][$item_id]['#entity']->field_related_other_content;
+      }
+      $idea_story = $layout_render_array['right'][$related_id]['field_related_idea_story'];
+      $links = $layout_render_array['right'][$related_id]['field_link_unlimited'];
+      // remove the related section if there are no items
+      if(empty($related_faculty) && empty($publication) && empty($idea_story) && empty($links)) {
+        unset($layout_render_array['right'][$related_id]);
+      }
+    }
+
+  }
+
+}
+
