@@ -244,7 +244,7 @@ function gsb_feature_school_story_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related wrapper',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_link_unlimited',
       1 => 'field_related_faculty',
