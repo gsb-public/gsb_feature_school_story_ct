@@ -132,6 +132,12 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'gsb_featured_links' => array(
+          'default' => array(
+            'weight' => '30',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );
