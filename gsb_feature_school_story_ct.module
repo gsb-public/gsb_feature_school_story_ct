@@ -80,3 +80,44 @@ function gsb_feature_school_story_ct_ds_pre_render_alter(&$layout_render_array, 
 
 }
 
+/**
+ * Implements hook_field_extra_fields().
+ */
+function gsb_feature_school_story_ct_field_extra_fields() {
+
+  $extra['node']['school_story']['display']['gsb_featured_links'] = array(
+    'label' => t('Featured Links'),
+    'description' => t('Featured Links.'),
+    'weight' => 30,
+  );
+
+  return $extra;
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function gsb_feature_school_story_ct_node_view($node, $view_mode, $langcode) {
+  // If this field is not configured for this view mode, skip it.
+  $fields = field_extra_fields_get_display('node', $node->type, $view_mode);
+  if (empty($fields['gsb_featured_links']['visible'])) {
+    return;
+  }
+
+  $entity_type = 'fieldable_panels_pane';
+  $entity_id = '12006';
+  $entity = entity_load_single($entity_type, $entity_id);
+  $render_array = entity_view($entity_type, array($entity_id => $entity));
+  $content = render($render_array);
+
+  $node->content['gsb_featured_links'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array(
+        'featured-links',
+      ),
+    ),
+    '#children' => $content,
+  );
+}
+
