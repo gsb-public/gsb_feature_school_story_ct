@@ -1,7 +1,7 @@
 name = GSB Feature School Story Content Type
 core = 7.x
 package = GSB
-version = 7.x-4.01
+version = 7.x-4.02
 project = gsb_feature_school_story_ct
 dependencies[] = concat_field
 dependencies[] = ds
@@ -15,7 +15,7 @@ dependencies[] = pathauto_title_alias
 dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views
-datestamp = 1409155171
+datestamp = 1411454344
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
