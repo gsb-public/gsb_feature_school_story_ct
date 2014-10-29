@@ -83,13 +83,13 @@ function gsb_feature_school_story_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '19',
+          'weight' => '20',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '18',
+          'weight' => '19',
         ),
         'redirect' => array(
           'weight' => '16',
