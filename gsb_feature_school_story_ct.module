@@ -33,7 +33,7 @@ function gsb_feature_school_story_ct_form_school_story_node_form_alter(&$form, &
   );
 
   // Hide alumni fields if the alumni checkbox is not checked.
-  $form['field_program_single']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
+  $form['field_program_unlimited']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
     array('checked' => FALSE),
   );
 }
