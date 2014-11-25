@@ -32,10 +32,36 @@ function gsb_feature_school_story_ct_form_school_story_node_form_alter(&$form, &
     ),
   );
 
+  // Add required field markers. The actual field validation is done in validate callback.
+  if (!empty($form['field_program_unlimited'][$language])) {
+    $form['field_program_unlimited'][$language]['#title'] .= " " . theme('form_required_marker');
+  }
+
   // Hide alumni fields if the alumni checkbox is not checked.
   $form['field_program_unlimited']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
     array('checked' => FALSE),
   );
+
+  // Perform additional validation.
+  $form['#validate'][] = 'gsb_feature_school_story_ct_school_story_node_form_validate';
+}
+
+/**
+ * Validate callback for school_story_node_form.
+ *  - Conditionally validate alumni story fields.
+ */
+function gsb_feature_school_story_ct_school_story_node_form_validate($form, &$form_state) {
+  $language = $form['language']['#value'];
+  $values = $form_state['values'];
+
+  // If school_story is an alumni story we need to manually validate some required fields.
+  if ($values['field_alumni_story'][$language][0]['value'] == TRUE) {
+
+    if (empty($values['field_program_unlimited'][$language][0]['tid'])) {
+      $field_label = $form['field_program_unlimited'][$language]['#title'];
+      form_set_error('field_program_unlimited]['.$language.'][0][tid', $field_label . ' field is required.');
+    }
+  }
 }
 
 /**
