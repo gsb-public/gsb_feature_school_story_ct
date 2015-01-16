@@ -79,6 +79,12 @@ function gsb_feature_school_story_ct_strongarm() {
       'idea_story_latest_stories' => array(
         'custom_settings' => FALSE,
       ),
+      'alumni_featured_content' => array(
+        'custom_settings' => TRUE,
+      ),
+      'alumni_reunion_agenda_list' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -113,6 +119,10 @@ function gsb_feature_school_story_ct_strongarm() {
             'weight' => '33',
             'visible' => FALSE,
           ),
+          'alumni_featured_content' => array(
+            'weight' => '14',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
@@ -131,11 +141,19 @@ function gsb_feature_school_story_ct_strongarm() {
             'weight' => '35',
             'visible' => FALSE,
           ),
+          'alumni_featured_content' => array(
+            'weight' => '13',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_featured_links' => array(
           'default' => array(
             'weight' => '10',
             'visible' => TRUE,
+          ),
+          'alumni_featured_content' => array(
+            'weight' => '16',
+            'visible' => FALSE,
           ),
         ),
       ),
