@@ -17,6 +17,17 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'school_story';
   $ds_fieldsetting->view_mode = 'alumni_featured_content';
   $ds_fieldsetting->settings = array(
+    'media_icon' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+        'conditions' => array(),
+      ),
+    ),
     'title' => array(
       'weight' => '1',
       'label' => 'hidden',
@@ -35,13 +46,6 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
           'ow-def-at' => FALSE,
         ),
         'conditions' => array(),
-      ),
-    ),
-    'field_icon' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-        ),
       ),
     ),
   );
@@ -514,12 +518,12 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_icon',
+        0 => 'media_icon',
         1 => 'title',
       ),
     ),
     'fields' => array(
-      'field_icon' => 'ds_content',
+      'media_icon' => 'ds_content',
       'title' => 'ds_content',
     ),
     'classes' => array(),
