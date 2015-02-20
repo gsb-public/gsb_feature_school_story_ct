@@ -1610,7 +1610,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'match_operator' => 'CONTAINS',
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'path' => '',
-        'size' => 60,
+        'size' => 100,
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 56,
