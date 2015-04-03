@@ -242,7 +242,7 @@ function gsb_feature_school_story_ct_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Related wrapper',
+    'label' => 'Related',
     'weight' => '12',
     'children' => array(
       0 => 'field_link_unlimited',
