@@ -110,6 +110,9 @@ function gsb_feature_school_story_ct_ds_pre_render_alter(&$layout_render_array, 
       if(empty($related_faculty) && empty($publication) && empty($idea_story) && empty($links)) {
         unset($layout_render_array['right'][$related_id]);
       }
+      if (empty($related_faculty)) {
+        unset($layout_render_array['right'][$related_id]['field_related_faculty']);
+      }      
     }
 
   }
