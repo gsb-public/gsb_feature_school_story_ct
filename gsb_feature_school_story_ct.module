@@ -63,8 +63,8 @@ function gsb_feature_school_story_ct_school_story_node_form_validate($form, &$fo
     }
   }
   else {
-    $form_state['complete form']['field_program_unlimited']['und']['#value'] = array();
-    $form_state['values']['field_program_unlimited']['und'] = array();
+    $form_state['complete form']['field_program_unlimited'][$language]['#value'] = array();
+    $form_state['values']['field_program_unlimited'][$language] = array();
   }
 }
 
@@ -79,6 +79,8 @@ function gsb_feature_school_story_ct_ds_pre_render_alter(&$layout_render_array, 
   // if the context is an idea story, and the view mode is full
   if (!empty($context['bundle']) && $context['bundle'] == 'school_story' && $context['view_mode'] == 'full') {
 
+    $language = $context['entity']->language;
+
     // get the id for the related section in the right-hand layout
     $related_id = -1;
     foreach($layout_render_array['right'] as $key => $right_stuff) {
@@ -90,12 +92,12 @@ function gsb_feature_school_story_ct_ds_pre_render_alter(&$layout_render_array, 
     if ($related_id != -1) {
       $related_faculty = array();
       if (!empty($context['entity']->field_related_faculty)) {
-        $item_id = $context['entity']->field_related_faculty['und'][0]['value'];
+        $item_id = $context['entity']->field_related_faculty[$language][0]['value'];
         $related_faculty = $layout_render_array['right'][$related_id]['field_related_faculty'][0]['entity']['field_collection_item'][$item_id]['#entity']->field_person_fac_single_ref;
       }
       $publication = array();
       if (!empty($context['entity']->field_related_other_unlimited)) {
-        $item_id = $context['entity']->field_related_other_unlimited['und'][0]['value'];
+        $item_id = $context['entity']->field_related_other_unlimited[$language][0]['value'];
         $publication = $layout_render_array['right'][$related_id]['field_related_other_unlimited'][0]['entity']['field_collection_item'][$item_id]['#entity']->field_related_other_content;
       }
       $idea_story = array();
@@ -105,18 +107,16 @@ function gsb_feature_school_story_ct_ds_pre_render_alter(&$layout_render_array, 
       $links = array();
       if (!empty($layout_render_array['right'][$related_id]['field_link_unlimited'])) {
         $links = $layout_render_array['right'][$related_id]['field_link_unlimited'];
-      }      
+      }
       // remove the related section if there are no items
       if(empty($related_faculty) && empty($publication) && empty($idea_story) && empty($links)) {
         unset($layout_render_array['right'][$related_id]);
       }
       if (empty($related_faculty)) {
         unset($layout_render_array['right'][$related_id]['field_related_faculty']);
-      }      
+      }
     }
-
   }
-
 }
 
 /**
