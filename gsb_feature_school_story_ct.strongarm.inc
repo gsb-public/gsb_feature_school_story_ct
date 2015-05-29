@@ -98,7 +98,7 @@ function gsb_feature_school_story_ct_strongarm() {
           'weight' => '19',
         ),
         'redirect' => array(
-          'weight' => '16',
+          'weight' => '17',
         ),
       ),
       'display' => array(
