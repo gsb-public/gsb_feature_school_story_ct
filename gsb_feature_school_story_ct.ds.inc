@@ -190,6 +190,7 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
           'fi-at' => '',
           'fi-def-at' => FALSE,
           'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -209,6 +210,7 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
           'fi-at' => '',
           'fi-def-at' => FALSE,
           'fi-odd-even' => TRUE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -229,6 +231,12 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -246,6 +254,32 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
       ),
     ),
     'field_related_other_unlimited' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_file_unlimited_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_person_ref_unlimited' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -562,12 +596,14 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
       'right' => array(
         9 => 'related_title',
         11 => 'field_related_faculty',
-        12 => 'gsb_featured_links',
-        13 => 'field_related_idea_story',
-        14 => 'field_pr_contact_unlimited',
-        15 => 'field_related_other_unlimited',
+        12 => 'field_person_ref_unlimited',
+        13 => 'gsb_featured_links',
+        14 => 'field_related_idea_story',
+        15 => 'field_pr_contact_unlimited',
         16 => 'group_wrapper_related',
-        17 => 'field_link_unlimited',
+        17 => 'field_related_other_unlimited',
+        18 => 'field_link_unlimited',
+        19 => 'field_file_unlimited_public',
       ),
     ),
     'fields' => array(
@@ -583,12 +619,14 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
       'related_title' => 'right',
       'gsb_announcement_school_listing_entity_view_1' => 'left',
       'field_related_faculty' => 'right',
+      'field_person_ref_unlimited' => 'right',
       'gsb_featured_links' => 'right',
       'field_related_idea_story' => 'right',
       'field_pr_contact_unlimited' => 'right',
-      'field_related_other_unlimited' => 'right',
       'group_wrapper_related' => 'right',
+      'field_related_other_unlimited' => 'right',
       'field_link_unlimited' => 'right',
+      'field_file_unlimited_public' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -600,6 +638,7 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|school_story|default'] = $ds_layout;
 
