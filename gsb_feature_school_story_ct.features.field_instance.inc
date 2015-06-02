@@ -681,7 +681,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 10,
+      'weight' => 60,
     ),
     'workbench_access_field' => 0,
   );
