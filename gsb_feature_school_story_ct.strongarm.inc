@@ -94,6 +94,12 @@ function gsb_feature_school_story_ct_strongarm() {
       'alumni_name' => array(
         'custom_settings' => FALSE,
       ),
+      'compact' => array(
+        'custom_settings' => TRUE,
+      ),
+      'expanded' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -125,10 +131,18 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'teaser' => array(
-            'weight' => '33',
+            'weight' => '36',
             'visible' => FALSE,
           ),
           'alumni_featured_content' => array(
+            'weight' => '14',
+            'visible' => FALSE,
+          ),
+          'compact' => array(
+            'weight' => '13',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
             'weight' => '14',
             'visible' => FALSE,
           ),
@@ -147,10 +161,18 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'teaser' => array(
-            'weight' => '35',
+            'weight' => '38',
             'visible' => FALSE,
           ),
           'alumni_featured_content' => array(
+            'weight' => '13',
+            'visible' => FALSE,
+          ),
+          'compact' => array(
+            'weight' => '12',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
             'weight' => '13',
             'visible' => FALSE,
           ),
@@ -162,6 +184,18 @@ function gsb_feature_school_story_ct_strongarm() {
           ),
           'alumni_featured_content' => array(
             'weight' => '16',
+            'visible' => FALSE,
+          ),
+          'compact' => array(
+            'weight' => '16',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
+            'weight' => '17',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '33',
             'visible' => FALSE,
           ),
         ),
