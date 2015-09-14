@@ -139,11 +139,11 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '13',
+            'weight' => '12',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '14',
+            'weight' => '13',
             'visible' => FALSE,
           ),
         ),
@@ -169,11 +169,11 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '12',
+            'weight' => '11',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '13',
+            'weight' => '12',
             'visible' => FALSE,
           ),
         ),
@@ -191,7 +191,7 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '17',
+            'weight' => '16',
             'visible' => FALSE,
           ),
           'teaser' => array(
