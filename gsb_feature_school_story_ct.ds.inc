@@ -828,10 +828,10 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'field_date',
-        1 => 'media_icon',
-        2 => 'group_wrapper_title',
-        3 => 'field_editorial_summary',
-        4 => 'title',
+        1 => 'group_wrapper_title',
+        2 => 'media_icon',
+        3 => 'title',
+        4 => 'field_editorial_summary',
       ),
       'right' => array(
         5 => 'field_image_key_image',
@@ -839,10 +839,10 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
     ),
     'fields' => array(
       'field_date' => 'left',
-      'media_icon' => 'left',
       'group_wrapper_title' => 'left',
-      'field_editorial_summary' => 'left',
+      'media_icon' => 'left',
       'title' => 'left',
+      'field_editorial_summary' => 'left',
       'field_image_key_image' => 'right',
     ),
     'classes' => array(),
