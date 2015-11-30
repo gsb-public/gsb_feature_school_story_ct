@@ -10,7 +10,7 @@
 function gsb_feature_school_story_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-school_story-field_academic_area_unlimited'
+  // Exported field_instance: 'node-school_story-field_academic_area_unlimited'.
   $field_instances['node-school_story-field_academic_area_unlimited'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -84,7 +84,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_alumni_story'
+  // Exported field_instance: 'node-school_story-field_alumni_story'.
   $field_instances['node-school_story-field_alumni_story'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -163,7 +163,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_body'
+  // Exported field_instance: 'node-school_story-field_body'.
   $field_instances['node-school_story-field_body'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -283,7 +283,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_business_insight_topic'
+  // Exported field_instance: 'node-school_story-field_business_insight_topic'.
   $field_instances['node-school_story-field_business_insight_topic'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -358,7 +358,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-school_story-field_centers_research_programs'
+  // 'node-school_story-field_centers_research_programs'.
   $field_instances['node-school_story-field_centers_research_programs'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -432,7 +432,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_date'
+  // Exported field_instance: 'node-school_story-field_date'.
   $field_instances['node-school_story-field_date'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -577,7 +577,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_editorial_summary'
+  // Exported field_instance: 'node-school_story-field_editorial_summary'.
   $field_instances['node-school_story-field_editorial_summary'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -720,7 +720,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_file_unlimited_public'
+  // Exported field_instance: 'node-school_story-field_file_unlimited_public'.
   $field_instances['node-school_story-field_file_unlimited_public'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -820,7 +820,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_icon'
+  // Exported field_instance: 'node-school_story-field_icon'.
   $field_instances['node-school_story-field_icon'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -899,7 +899,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_image_key_image'
+  // Exported field_instance: 'node-school_story-field_image_key_image'.
   $field_instances['node-school_story-field_image_key_image'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -947,7 +947,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
+          'image_link' => 'content',
           'image_style' => '170x100',
         ),
         'type' => 'image',
@@ -958,7 +958,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
+          'image_link' => 'content',
           'image_style' => '',
         ),
         'type' => 'image',
@@ -1016,7 +1016,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_link_key_audio'
+  // Exported field_instance: 'node-school_story-field_link_key_audio'.
   $field_instances['node-school_story-field_link_key_audio'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1114,7 +1114,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_link_key_video'
+  // Exported field_instance: 'node-school_story-field_link_key_video'.
   $field_instances['node-school_story-field_link_key_video'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1212,7 +1212,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_link_single'
+  // Exported field_instance: 'node-school_story-field_link_single'.
   $field_instances['node-school_story-field_link_single'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1313,7 +1313,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_link_unlimited'
+  // Exported field_instance: 'node-school_story-field_link_unlimited'.
   $field_instances['node-school_story-field_link_unlimited'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1415,7 +1415,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-school_story-field_part_of_business_magazine'
+  // 'node-school_story-field_part_of_business_magazine'.
   $field_instances['node-school_story-field_part_of_business_magazine'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1494,7 +1494,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_part_of_rethink'
+  // Exported field_instance: 'node-school_story-field_part_of_rethink'.
   $field_instances['node-school_story-field_part_of_rethink'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1573,7 +1573,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_pathauto_title_alias'
+  // Exported field_instance: 'node-school_story-field_pathauto_title_alias'.
   $field_instances['node-school_story-field_pathauto_title_alias'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1652,7 +1652,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_person_ref_unlimited'
+  // Exported field_instance: 'node-school_story-field_person_ref_unlimited'.
   $field_instances['node-school_story-field_person_ref_unlimited'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1733,7 +1733,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_pr_contact_unlimited'
+  // Exported field_instance: 'node-school_story-field_pr_contact_unlimited'.
   $field_instances['node-school_story-field_pr_contact_unlimited'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1813,7 +1813,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_program_unlimited'
+  // Exported field_instance: 'node-school_story-field_program_unlimited'.
   $field_instances['node-school_story-field_program_unlimited'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1888,7 +1888,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_region_of_interest'
+  // Exported field_instance: 'node-school_story-field_region_of_interest'.
   $field_instances['node-school_story-field_region_of_interest'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -1962,7 +1962,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_related_faculty'
+  // Exported field_instance: 'node-school_story-field_related_faculty'.
   $field_instances['node-school_story-field_related_faculty'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -2040,7 +2040,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_related_idea_story'
+  // Exported field_instance: 'node-school_story-field_related_idea_story'.
   $field_instances['node-school_story-field_related_idea_story'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -2122,7 +2122,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_related_other_unlimited'
+  // Exported field_instance: 'node-school_story-field_related_other_unlimited'.
   $field_instances['node-school_story-field_related_other_unlimited'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -2198,7 +2198,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_search_field'
+  // Exported field_instance: 'node-school_story-field_search_field'.
   $field_instances['node-school_story-field_search_field'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
@@ -2297,7 +2297,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_tag'
+  // Exported field_instance: 'node-school_story-field_tag'.
   $field_instances['node-school_story-field_tag'] = array(
     'bundle' => 'school_story',
     'custom_add_another' => '',
