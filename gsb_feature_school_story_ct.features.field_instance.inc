@@ -1733,86 +1733,6 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-school_story-field_pr_contact_unlimited'.
-  $field_instances['node-school_story-field_pr_contact_unlimited'] = array(
-    'bundle' => 'school_story',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alumni_featured_content' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 19,
-      ),
-      'compact' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_reference_view_mode' => 'full',
-          'use_content_language' => 1,
-        ),
-        'type' => 'ds_taxonomy_view_mode',
-        'weight' => 11,
-      ),
-      'expanded' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'idea_story_related' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 10,
-      ),
-      'news_listing' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 13,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_pr_contact_unlimited',
-    'label' => 'PR Contact',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'use_hierarchical_select_lite' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_select',
-      'weight' => 16,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-school_story-field_program_unlimited'.
   $field_instances['node-school_story-field_program_unlimited'] = array(
     'bundle' => 'school_story',
@@ -2315,7 +2235,6 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
   t('Link');
   t('Media Format');
   t('Mentioned');
-  t('PR Contact');
   t('People (Faculty, Alumni, PhD Student, MSx Fellow, Staff)');
   t('Program');
   t('Publication Date');
