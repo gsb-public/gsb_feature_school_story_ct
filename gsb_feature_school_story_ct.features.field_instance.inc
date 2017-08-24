@@ -959,7 +959,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'image_link' => 'content',
-          'image_style' => '',
+          'image_style' => 'compress',
         ),
         'type' => 'image',
         'weight' => 1,
