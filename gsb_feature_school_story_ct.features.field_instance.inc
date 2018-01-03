@@ -1414,165 +1414,6 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance:
-  // 'node-school_story-field_part_of_business_magazine'.
-  $field_instances['node-school_story-field_part_of_business_magazine'] = array(
-    'bundle' => 'school_story',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alumni_featured_content' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
-      ),
-      'compact' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 32,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
-      ),
-      'expanded' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 32,
-      ),
-      'idea_story_related' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 26,
-      ),
-      'news_listing' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 29,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 29,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_part_of_business_magazine',
-    'label' => 'Was this published in Stanford Business?',
-    'required' => 1,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'checkall' => FALSE,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_buttons',
-      'weight' => 15,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-school_story-field_part_of_rethink'.
-  $field_instances['node-school_story-field_part_of_rethink'] = array(
-    'bundle' => 'school_story',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alumni_featured_content' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
-      ),
-      'compact' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 29,
-      ),
-      'expanded' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
-      ),
-      'idea_story_related' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
-      ),
-      'news_listing' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 28,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_part_of_rethink',
-    'label' => 'Was this promoted in Re:Think?',
-    'required' => 1,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'checkall' => FALSE,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_buttons',
-      'weight' => 14,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-school_story-field_pathauto_title_alias'.
   $field_instances['node-school_story-field_pathauto_title_alias'] = array(
     'bundle' => 'school_story',
@@ -1679,6 +1520,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'people_fpp',
         ),
         'type' => 'entityreference_entity_view',
@@ -1729,6 +1571,86 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 56,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-school_story-field_pr_contact_unlimited'.
+  $field_instances['node-school_story-field_pr_contact_unlimited'] = array(
+    'bundle' => 'school_story',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
+      ),
+      'compact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'ds',
+        'settings' => array(
+          'conditions' => array(),
+          'taxonomy_term_reference_view_mode' => 'full',
+          'use_content_language' => 1,
+        ),
+        'type' => 'ds_taxonomy_view_mode',
+        'weight' => 11,
+      ),
+      'expanded' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
+      ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+      'news_listing' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pr_contact_unlimited',
+    'label' => 'PR Contact',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -1913,6 +1835,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'idea_story_related',
         ),
         'type' => 'entityreference_entity_view',
@@ -2112,18 +2035,17 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'field_centers_research_programs' => 'field_centers_research_programs',
         'field_date' => 'field_date',
         'field_editorial_summary' => 'field_editorial_summary',
+        'field_file_unlimited_public' => 0,
         'field_icon' => 0,
         'field_image_key_image' => 0,
         'field_link_key_audio' => 0,
         'field_link_key_video' => 0,
         'field_link_single' => 0,
         'field_link_unlimited' => 0,
-        'field_part_of_business_magazine' => 0,
-        'field_part_of_rethink' => 0,
         'field_pathauto_title_alias' => 0,
+        'field_person_ref_unlimited' => 0,
         'field_pr_contact_unlimited' => 'field_pr_contact_unlimited',
-        'field_program_single' => 'field_program_single',
-        'field_region_of_interest' => 'field_region_of_interest',
+        'field_program_unlimited' => 0,
         'field_related_faculty' => 'field_related_faculty',
         'field_related_idea_story' => 0,
         'field_related_other_unlimited' => 0,
@@ -2134,9 +2056,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'widget' => array(
       'active' => 0,
       'module' => 'concat_field',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
+      'settings' => array(),
       'type' => 'concat_field_default',
       'weight' => 18,
     ),
@@ -2235,6 +2155,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
   t('Link');
   t('Media Format');
   t('Mentioned');
+  t('PR Contact');
   t('People (Faculty, Alumni, PhD Student, MSx Fellow, Staff)');
   t('Program');
   t('Publication Date');
@@ -2243,8 +2164,6 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
   t('Short URL');
   t('Story or Announcement');
   t('URL Alias');
-  t('Was this promoted in Re:Think?');
-  t('Was this published in Stanford Business?');
   t('minimum size 1200 x 630 px');
 
   return $field_instances;

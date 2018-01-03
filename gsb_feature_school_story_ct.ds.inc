@@ -112,28 +112,6 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'school_story';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'media_icon' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-        ),
-        'conditions' => array(),
-      ),
-    ),
-    'related_title' => array(
-      'weight' => '8',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-        ),
-        'conditions' => array(),
-      ),
-    ),
     'social_buttons_bottom' => array(
       'weight' => '6',
       'label' => 'hidden',
@@ -268,19 +246,6 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_pr_contact_unlimited' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
     'field_related_faculty' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -341,6 +306,19 @@ function gsb_feature_school_story_ct_ds_field_settings_info() {
       ),
     ),
     'field_person_ref_unlimited' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_pr_contact_unlimited' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -757,32 +735,29 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'media_icon',
-        1 => 'title',
-        2 => 'field_editorial_summary',
-        3 => 'field_date',
-        4 => 'social_buttons_top',
-        5 => 'field_body',
-        6 => 'social_buttons_bottom',
-        7 => 'field_link_single',
-        8 => 'gsb_media_inquiries',
-        10 => 'gsb_announcement_school_listing_entity_view_1',
+        0 => 'title',
+        1 => 'field_editorial_summary',
+        2 => 'field_date',
+        3 => 'social_buttons_top',
+        4 => 'field_body',
+        5 => 'social_buttons_bottom',
+        6 => 'field_link_single',
+        7 => 'gsb_media_inquiries',
+        9 => 'gsb_announcement_school_listing_entity_view_1',
       ),
       'right' => array(
-        9 => 'related_title',
-        11 => 'field_related_faculty',
-        12 => 'field_person_ref_unlimited',
-        13 => 'gsb_featured_links',
-        14 => 'field_related_idea_story',
-        15 => 'field_pr_contact_unlimited',
-        16 => 'group_wrapper_related',
-        17 => 'field_related_other_unlimited',
-        18 => 'field_link_unlimited',
-        19 => 'field_file_unlimited_public',
+        8 => 'field_related_faculty',
+        10 => 'gsb_featured_links',
+        11 => 'field_person_ref_unlimited',
+        12 => 'field_pr_contact_unlimited',
+        13 => 'field_related_idea_story',
+        14 => 'field_related_other_unlimited',
+        15 => 'group_wrapper_related',
+        16 => 'field_link_unlimited',
+        17 => 'field_file_unlimited_public',
       ),
     ),
     'fields' => array(
-      'media_icon' => 'left',
       'title' => 'left',
       'field_editorial_summary' => 'left',
       'field_date' => 'left',
@@ -791,15 +766,14 @@ function gsb_feature_school_story_ct_ds_layout_settings_info() {
       'social_buttons_bottom' => 'left',
       'field_link_single' => 'left',
       'gsb_media_inquiries' => 'left',
-      'related_title' => 'right',
-      'gsb_announcement_school_listing_entity_view_1' => 'left',
       'field_related_faculty' => 'right',
-      'field_person_ref_unlimited' => 'right',
+      'gsb_announcement_school_listing_entity_view_1' => 'left',
       'gsb_featured_links' => 'right',
-      'field_related_idea_story' => 'right',
+      'field_person_ref_unlimited' => 'right',
       'field_pr_contact_unlimited' => 'right',
-      'group_wrapper_related' => 'right',
+      'field_related_idea_story' => 'right',
       'field_related_other_unlimited' => 'right',
+      'group_wrapper_related' => 'right',
       'field_link_unlimited' => 'right',
       'field_file_unlimited_public' => 'right',
     ),
