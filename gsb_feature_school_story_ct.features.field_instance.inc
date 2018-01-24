@@ -747,7 +747,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 14,
+        'weight' => 6,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1341,7 +1341,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 13,
+        'weight' => 5,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1524,7 +1524,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'view_mode' => 'people_fpp',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 10,
+        'weight' => 2,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1759,7 +1759,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'view_mode' => 'people_fpp',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 9,
+        'weight' => 1,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1839,7 +1839,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'view_mode' => 'idea_story_related',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 11,
+        'weight' => 3,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1920,7 +1920,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_related_items_field_collection',
-        'weight' => 12,
+        'weight' => 4,
       ),
       'expanded' => array(
         'label' => 'hidden',
