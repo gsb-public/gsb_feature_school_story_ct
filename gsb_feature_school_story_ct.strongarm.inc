@@ -291,6 +291,10 @@ function gsb_feature_school_story_ct_strongarm() {
             'weight' => '33',
             'visible' => FALSE,
           ),
+          'news_listing' => array(
+            'weight' => '30',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
