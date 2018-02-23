@@ -113,7 +113,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 28,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -383,7 +383,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 26,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -747,7 +747,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -815,7 +815,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 60,
+      'weight' => 61,
     ),
     'workbench_access_field' => 0,
   );
@@ -1409,7 +1409,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 59,
+      'weight' => 60,
     ),
     'workbench_access_field' => 0,
   );
@@ -1678,9 +1678,15 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 34,
+        'module' => 'gsb_feature_existing_node_list_fpp',
+        'settings' => array(
+          'conditions' => array(),
+          'links' => TRUE,
+          'use_content_language' => TRUE,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 6,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -1967,6 +1973,87 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-school_story-field_related_programs'.
+  $field_instances['node-school_story-field_related_programs'] = array(
+    'bundle' => 'school_story',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alumni_featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'compact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'conditions' => array(),
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 31,
+      ),
+      'expanded' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_related_programs',
+    'label' => 'Programs',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 59,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-school_story-field_search_field'.
   $field_instances['node-school_story-field_search_field'] = array(
     'bundle' => 'school_story',
@@ -1991,7 +2078,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 30,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2088,7 +2175,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 27,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2158,6 +2245,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
   t('PR Contact');
   t('People (Faculty, Alumni, PhD Student, MSx Fellow, Staff)');
   t('Program');
+  t('Programs');
   t('Publication Date');
   t('Publication or Event');
   t('Search field');
