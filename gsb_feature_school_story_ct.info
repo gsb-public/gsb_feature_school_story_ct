@@ -64,6 +64,7 @@ features[field_instance][] = node-school_story-field_business_insight_topic
 features[field_instance][] = node-school_story-field_centers_research_programs
 features[field_instance][] = node-school_story-field_date
 features[field_instance][] = node-school_story-field_editorial_summary
+features[field_instance][] = node-school_story-field_exclude_story_homepage
 features[field_instance][] = node-school_story-field_file_unlimited_public
 features[field_instance][] = node-school_story-field_icon
 features[field_instance][] = node-school_story-field_image_key_image
