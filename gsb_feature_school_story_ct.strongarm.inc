@@ -190,6 +190,9 @@ function gsb_feature_school_story_ct_strongarm() {
       'program_explore_other' => array(
         'custom_settings' => FALSE,
       ),
+      'homepage_school_news' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -239,6 +242,10 @@ function gsb_feature_school_story_ct_strongarm() {
             'weight' => '13',
             'visible' => FALSE,
           ),
+          'homepage_school_news' => array(
+            'weight' => '22',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
@@ -269,6 +276,10 @@ function gsb_feature_school_story_ct_strongarm() {
             'weight' => '12',
             'visible' => FALSE,
           ),
+          'homepage_school_news' => array(
+            'weight' => '21',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_featured_links' => array(
           'default' => array(
@@ -293,6 +304,10 @@ function gsb_feature_school_story_ct_strongarm() {
           ),
           'news_listing' => array(
             'weight' => '30',
+            'visible' => FALSE,
+          ),
+          'homepage_school_news' => array(
+            'weight' => '23',
             'visible' => FALSE,
           ),
         ),
