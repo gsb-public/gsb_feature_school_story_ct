@@ -47,7 +47,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -131,7 +131,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -215,7 +215,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -366,7 +366,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -447,7 +447,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -566,7 +566,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -705,7 +705,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -841,7 +841,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -923,7 +923,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1034,7 +1034,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1243,7 +1243,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1347,7 +1347,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1454,7 +1454,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1561,7 +1561,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1670,7 +1670,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1756,7 +1756,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1843,7 +1843,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1924,7 +1924,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2009,7 +2009,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2095,7 +2095,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2182,7 +2182,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2266,7 +2266,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2347,7 +2347,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2450,7 +2450,7 @@ function gsb_feature_school_story_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'idea_story_related' => array(
         'label' => 'above',

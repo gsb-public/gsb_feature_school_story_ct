@@ -51,6 +51,7 @@ features[field_group][] = group_academic_area|node|school_story|form
 features[field_group][] = group_additional_topics|node|school_story|form
 features[field_group][] = group_alumni_story|node|school_story|form
 features[field_group][] = group_centers|node|school_story|form
+features[field_group][] = group_news_wrapper|node|school_story|homepage_school_news
 features[field_group][] = group_related_content|node|school_story|form
 features[field_group][] = group_tags|node|school_story|form
 features[field_group][] = group_taxonomy|node|school_story|form

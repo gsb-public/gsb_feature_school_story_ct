@@ -243,7 +243,7 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'homepage_school_news' => array(
-            'weight' => '22',
+            'weight' => '23',
             'visible' => FALSE,
           ),
         ),
@@ -277,7 +277,7 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'homepage_school_news' => array(
-            'weight' => '21',
+            'weight' => '22',
             'visible' => FALSE,
           ),
         ),
@@ -307,7 +307,7 @@ function gsb_feature_school_story_ct_strongarm() {
             'visible' => FALSE,
           ),
           'homepage_school_news' => array(
-            'weight' => '23',
+            'weight' => '24',
             'visible' => FALSE,
           ),
         ),

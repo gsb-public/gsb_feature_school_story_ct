@@ -122,6 +122,40 @@ function gsb_feature_school_story_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_news_wrapper|node|school_story|homepage_school_news';
+  $field_group->group_name = 'group_news_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'school_story';
+  $field_group->mode = 'homepage_school_news';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_date',
+      1 => 'field_icon',
+      2 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-news-wrapper field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_news_wrapper|node|school_story|homepage_school_news'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_related_content|node|school_story|form';
   $field_group->group_name = 'group_related_content';
   $field_group->entity_type = 'node';
@@ -318,6 +352,7 @@ function gsb_feature_school_story_ct_field_group_info() {
   t('Tagging');
   t('Tags');
   t('Title wrapper');
+  t('Wrapper');
 
   return $field_groups;
 }
