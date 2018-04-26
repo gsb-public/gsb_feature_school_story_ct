@@ -133,7 +133,7 @@ function gsb_feature_school_story_ct_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_date',
-      1 => 'field_icon',
+      1 => 'media_icon',
       2 => 'title',
     ),
     'format_type' => 'div',
